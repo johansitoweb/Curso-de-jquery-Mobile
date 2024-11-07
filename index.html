@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <TITLE>Curso JqueryMobile</TITLE>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <!-- Estos tres links aportan todo el css que vamos a utilizar. Se exportan themas clasicos que las 
+         versiones más modernas no tienen, ya que estas ultimas solo tienen tema claro y oscur (light/dark) -->                                                                                                         
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+    <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+
+    <!-- Estos dos links aportan todo el javascript que podemos obtener de jqueryMobile -->
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script></head>
+    
+<body>
+    <!-- Para poder asignar el css, usaremos data-role. Cada pagina será "page" y dentro de esta
+         para poder diferenciar cada una de las secciones, utilizaremos "header", "main/content" y footer -->
+    <div data-role="page" style="min-height: auto;">
+        <!-- Header -->       
+       <div data-role="header" data-position="fixed">
+           <h1>Home</h1>
+           <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html"class="ui-btn-active">P1</a></li>
+                    <li><a href="pagina2.html">P2</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=35XFAkwmU4c">SORPRESA</a></li>
+                </ul>
+           </div>
+       </div>
+       
+        <!-- Section -->
+        <div data-role="main" class="ui-content">
+            <h2>Bienvenidos a la app/tutorial usando jQueryMobile</h2>
+            <div data-role="collapsible">
+                <h3>Ejemplo 1</h1>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem qui similique, reprehenderit dignissimos provident animi asperiores temporibus, tenetur molestias commodi non optio fugit recusandae adipisci ab obcaecati ea vel dolore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod nesciunt repellendus corrupti atque? Consectetur vero quaerat, itaque expedita est vel atque quae molestias aut iste iusto accusamus numquam rerum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem qui similique, reprehenderit dignissimos provident animi asperiores temporibus, tenetur molestias commodi non optio fugit recusandae adipisci ab obcaecati ea vel dolore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod nesciunt repellendus corrupti atque? Consectetur vero quaerat, itaque expedita est vel atque quae molestias aut iste iusto accusamus numquam rerum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem qui similique, reprehenderit dignissimos provident animi asperiores temporibus, tenetur molestias commodi non optio fugit recusandae adipisci ab obcaecati ea vel dolore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod nesciunt repellendus corrupti atque? Consectetur vero quaerat, itaque expedita est vel atque quae molestias aut iste iusto accusamus numquam rerum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem qui similique, reprehenderit dignissimos provident animi asperiores temporibus, tenetur molestias commodi non optio fugit recusandae adipisci ab obcaecati ea vel dolore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod nesciunt repellendus corrupti atque? Consectetur vero quaerat, itaque expedita est vel atque quae molestias aut iste iusto accusamus numquam rerum?   
+                </p>
+            </div><br><br>
+            <h4>Los personajes y monstruos deberian verse tal que asi (ejemplo básico)</h4>
+            <div data-role="collapsible">
+                <h3>Fafnir:  &nbsp;&nbsp;&nbsp;&nbsp; 58HP  &nbsp;&nbsp;&nbsp;&nbsp; 20CA   &nbsp;&nbsp;&nbsp;&nbsp; 2TA</h3>
+                <ul data-role="listview" data-inset="true">
+                    <li>FUE: 8</li>
+                    <li>DES: 16</li>
+                    <li>CON: 10</li>
+                    <li>INT: 24</li>
+                    <li>SAB: 22</li>
+                    <li>CAR: 16</li>
+                </ul>
+                <a href="#">Sumar vida</a> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Restar vida</a> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Eliminar</a>
+
+            </div>
+            <a href="pagina2.html" data-role="button" data-theme="b" data-transition="slide" data-rel="dialog">Ir a pagina 2</a>
+            
+        </div>
+
+        <!-- Footer -->
+        <div data-role="footer">
+            <h3>&copy; 2020 - Agustin Merida Gutierrez</h3>
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>

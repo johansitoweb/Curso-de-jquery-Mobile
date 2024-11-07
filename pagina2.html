@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <TITLE>Curso JqueryMobile</TITLE>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <!-- Estos tres links aportan todo el css que vamos a utilizar. Se exportan themas clasicos que las 
+         versiones más modernas no tienen, ya que estas ultimas solo tienen tema claro y oscur (light/dark) -->                                                                                                         
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+    <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+
+    <!-- Estos dos links aportan todo el javascript que podemos obtener de jqueryMobile -->
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script></head>
+    
+<body>
+    <!-- Segunda pagina  -->
+    
+    <div data-role="page">
+        <!-- Header -->       
+        <div data-role="header" data-position="fixed">
+            <h1>Home</h1>
+            <div data-role="navbar">
+                 <ul>
+                     <li><a href="index.html" >P1</a></li>
+                     <li><a href="pagina2.html" class="ui-btn-active">P2</a></li>
+                 </ul>
+            </div>
+        </div>
+       
+        <!-- Section -->
+        <div data-role="main" class="ui-content">
+            <h2>¿Deseas deshacerte de tu alma?</h2>
+            <div data-role="controlgroup">
+                <a href="index.html" data-role="button" data-theme="b" data-transition="slideup" data-icon="check"  >Ofrecer mi alma a Lucifer Lucero del Alba</a>
+                <a href="index.html" data-role="button" data-theme="b" data-transition="slidedown" data-icon="delete" >Negarse como un sucio pagano</a>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    
+</body>
+
+</html>
